@@ -6,7 +6,7 @@ openwrt一键编译脚本（非原创，原作者ITdesk）
 
 1.先将脚本下载到ubuntu的根目录，其他目录会报错！
 
-下载命令: git clone https://我的连接
+下载命令: git clone https://github.com/kenzok8/k.git
 
 2.ssh连接 执行脚本 sh kenzo
 
