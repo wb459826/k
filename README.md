@@ -8,7 +8,9 @@ openwrt一键编译脚本（非原创，原作者ITdesk）
 
 下载命令: git clone https://github.com/kenzok8/k.git
 
-2.ssh连接 执行脚本 sh kenzo
+2.ssh连接 运行cd k 进入脚本目录，然后执行脚本 sh kenzo
+
+  该脚本默认会生成kenzo的脚本文件，默认创建Openwrt目录（大写的O）
 
 
 测试系统：ubuntu18.4 
