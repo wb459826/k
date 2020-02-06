@@ -114,13 +114,13 @@ source_Download(){
 		echo ""
   		echo "	准备下载openwrt代码"
 		echo ""
-		echo "	1.openwrt17.1(稳定版本)_source"
+		echo "	1.openwrt19.07(Lienol大神修改版)_source"
 		echo ""
-		echo "	2.openwrt18.6(发布版本)_source"
+		echo "	2.openwrt19.07(官网原版)_source"
 		echo ""
-		echo "	3.Lean_R8(稳定版)_source"
+		echo "	3.Lean大神(最新版)_source"
 		echo ""
-		echo " 	4.Lean_R9(最新版)_source"
+		echo " 	4.Lienol修改LEDE(最新版)_source"
 		echo ""
 		echo "	0.exit"
 		echo ""
@@ -129,19 +129,19 @@ source_Download(){
 		read  -p "请输入你要下载的源代码:" Download_source
 			case "$Download_source" in
 				1)
-				git clone -b lede-17.01 https://github.com/openwrt/openwrt.git lede
-				cd lede
+				git clone  https://github.com/Lienol/openwrt.git lede
+				cd openwrt
 				;;
 				2)
 				git clone  https://github.com/openwrt/openwrt.git lede
 				cd lede
 				;;
 				3)
-				git clone https://github.com/coolsnowwolf/openwrt.git lede
+				git clone https://github.com/coolsnowwolf/lede.git lede
 				cd lede
 				;;
 				4)
-				git clone https://github.com/coolsnowwolf/lede.git lede
+				git clone https://github.com/Lienol/lean-lede.git lede
 				cd lede
 				;;
 				0)
@@ -581,7 +581,7 @@ esac
 	echo ""
 	echo ""
 	echo "	             PS:请开启全局再进行编译，否则容易失败！"
-	echo "			      By:Kenzo"
+	echo "			        By:Kenzo"
 	echo "	             --------------------------------------"
 	read -p "请输入数字:" num
 	case "$num" in
